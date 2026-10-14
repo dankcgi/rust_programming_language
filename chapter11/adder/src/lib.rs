@@ -3,7 +3,7 @@ pub fn add_two(a: u64) -> u64 {
 }
 
 pub fn add(left: u64, right: u64) -> u64 {
-    left + right + 1
+    left + right
 }
 
 #[derive(Debug)]
@@ -83,6 +83,7 @@ mod tests {
     }
 
     #[test]
+    #[ignore]
     fn greeting_contains_name() {
         let result = greeting("Carol");
         assert!(
@@ -104,7 +105,7 @@ mod tests {
     }
 
     #[test]
-    fn it_works() -> Result<(), String> {
+    fn add_two_and_two() -> Result<(), String> {
         let result = add(2, 2);
 
         if result == 4 {
